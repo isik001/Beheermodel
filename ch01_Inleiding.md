@@ -2,91 +2,74 @@
 
 ## Leeswijzer
 
-> Dit document beschrijft hoe Logius, afdeling Standaarden (hierna:
-> Logius) xxxxx standaard beheert en hoe de bijbehorende governance is
-> ingericht.
+>Dit document beschrijft hoe Logius, afdeling Stelselregie de Peppol standaard beheert en hoe de bijbehorende governance is ingericht.
 
-## _Vul naam van de standaard hier in_
+## _Peppol_
 
 Beschrijf hier de standaard
-
 <aside class="example">
-De xxx standaard omvat een set van normatieve ontwerpafspraken voor
-het structureren en documenteren. De standaard heeft tot doel om
-betere, uniforme en ontwikkelaar vriendelijke API’s te ontwikkelen die
-makkelijk te implementeren zijn. De set van afspraken bestaat uit
-breed toepasbare en ondubbelzinnige richtlijnen. Deze helpen
-organisaties die nieuwe API’s ontwikkelen voor Nederlandse overheden
-(Rijk, provincies, gemeenten en waterschappen) en instellingen uit de
-(semi-) publieke sector. Het Nut en de werking van de standaard zijn
-reeds goed beschreven door het Forum Standaardisatie en voor de
-eenduidigheid hieronder integraal
-opgenomen [<span class="underline">zie link</span>](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules):
-van de standaard zijn reeds goed beschreven door het Forum
-Standaardisatie en voor de eenduidigheid hieronder integraal opgenomen
-[<span class="underline">zie link</span>](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules):
+
 </aside>
 
 ### Nut
+De Peppol-standaard is een internationale set van afspraken en technische specificaties waarmee organisaties elektronisch documenten kunnen uitwisselen, zoals facturen, orders,time-cards en ordersbevestigingen. 
+In de kern zorgt Peppol ervoor dat verschillende systemen wereldwijd met elkaar kunnen communiceren via één gestandaardiseerd netwerk. 
 
-Beschrijf hier de nut van de standaard
+De standaard bestaat uit drie belangrijke onderdelen:
+Technische specificaties (zoals UBL/XML): hierin staat hoe documenten worden opgebouwd, zodat systemen ze kunnen lezen en verwerken.
+Transportinfrastructuur (het Peppol-netwerk): een veilig netwerk dat zorgt voor de verzending van berichten tussen partijen via Access Points.
+Afspraken en governance (OpenPeppol): regels en standaarden die ervoor zorgen dat alle deelnemers op dezelfde manier werken en interoperabel blijven.
 
-<aside class="example">
-De overheid ontsluit gegevens en applicaties steeds vaker met
-standaarden. Voorbeelden hiervan zijn te zien op de website
-developer.overheid.nl, in Common Ground, Haal Centraal en het Digitaal
-Stelsel Omgevingswet.
+Het gebruik van Peppol zorgt voor:
+één aansluiting met wereldwijde bereikbaarheid (Connect Once, Reach All)
+veilige en betrouwbare uitwisseling van documenten
+minder handmatige verwerking
+snellere en foutloze administratieve processen
+internationale interoperabiliteit
+Kort gezegd: Peppol is een gestandaardiseerd digitaal “afsprakenstelsel” dat het mogelijk maakt om wereldwijd op dezelfde manier elektronische zakelijke documenten uit te wisselen. 
 
-Representational state transfer (REST) is een ontwerpprincipe dat
-wereldwijd veel gebruikt wordt voor het bouwen van
-programmeerinterfaces over het web (API's). REST is geen standaard
-maar een ontwerpprincipe, en laat nog veel vrijheid in het
-structureren van API's.
+VOORBEELD 1
+Stel, een IT-leverancier levert diensten aan zowel een gemeente als een ziekenhuis in Nederland.
 
-De standaard REST-API Design Rules geeft een verzameling basisregels
-voor structuur en naamgeving waarmee de overheid op een uniforme en
-eenduidige manier REST-API's aanbiedt. Dit maakt het voor
-ontwikkelaars gemakkelijker om betrouwbare applicaties met te
-ontwikkelen met API's van de overheid. Bron: Forum standaardisatie
-</aside>
+Zonder Peppol zou de leverancier vaak per organisatie andere manieren moeten gebruiken om facturen aan te leveren (e-mail, portalen, pdf’s of verschillende e-factuurkoppelingen).
+
+Met Peppol werkt het zo:
+
+De leverancier sluit één keer aan op het Peppol-netwerk via een Access Point.
+Vanuit het eigen boekhoudsysteem wordt een standaard Peppol-factuur verstuurd.
+De factuur gaat via het Peppol-netwerk naar de juiste overheidsorganisatie of zorginstelling.
+De gemeente en het ziekenhuis ontvangen de factuur automatisch in hun eigen financiële systeem, volledig verwerkt volgens dezelfde standaard.
+Resultaat: één aansluiting waarmee je alle aangesloten Nederlandse overheidsorganisaties en steeds meer zorginstellingen kunt bereiken  dat is Connect Once, Reach All in de Nederlandse prak
+
 
 ### Werking
+De werking van de Peppol-standaard draait om een combinatie van afspraken, formaten en een beveiligd netwerk waarmee organisaties elektronische documenten met elkaar kunnen uitwisselen.
 
-Beschrijf hier de werking van de standaard
+In de praktijk werkt het zo:
+Documentopmaak (standaard formaat)
+Een organisatie maakt een document aan, zoals een factuur, in een gestandaardiseerd formaat (bijvoorbeeld UBL/XML). Dit zorgt ervoor dat alle systemen dezelfde “taal” spreken.
+Verzenden via Peppol Access Point
+Het document wordt vanuit het eigen systeem verstuurd naar een Peppol Access Point. Dit is een soort beveiligde gateway naar het Peppol-netwerk.
+Routing via het Peppol-netwerk
+Het netwerk zorgt ervoor dat het bericht op basis van adressering (Peppol ID) bij de juiste ontvanger terechtkomt. Dit gebeurt veilig en gecontroleerd, zonder dat partijen direct met elkaar hoeven te koppelen.
+Ontvangst via Access Point van de ontvanger
+Het Access Point van de ontvangende organisatie haalt het bericht op uit het netwerk en levert het af in hun eigen systeem.
+Verwerking in het systeem
+De ontvanger kan het document automatisch verwerken in zijn financiële of administratieve systeem, zonder handmatige invoer.
 
-<aside class="example">
-Een application programming interface (API) is een gestructureerd en
-gedocumenteerd koppelvlak voor communicatie tussen applicaties. Zo
-lang er computers zijn, bestaan er API's en worden er verschillende
-API technologieën gebruikt. In de laatste 10 jaar heeft
-Representational state transfer (REST) zich ontwikkeld tot een
-bepalend principe voor het realiseren van API's. Zogenaamde
-‘REST-API's’ doen voor applicaties wat websites voor mensen doen.
-Websites presenteren informatie aan mensen, REST-API's maken
-applicaties en gegevens over het Internet beschikbaar voor andere
-applicaties. De technologie achter websites en REST-API's heeft daarom
-veel gemeen.
-
-De overheid gebruikt REST-API's voor koppelingen met andere overheden,
-bedrijven en indirect ook met burgers, bijvoorbeeld via mobiele apps
-en webapps die aangeboden worden door bedrijven of overheden zelf.
-Ontwikkelaars kunnen deze REST-API's bevragen vanuit de gangbare
-programmeertalen en frameworks zoals Python, Java, Microsoft C\#, PHP.
-</aside>
 
 ### Status
+De status van de Peppol-standaard is op dit moment die van een breed geadopteerde, volwassen internationale e-procurement- en e-invoicing standaard die actief in gebruik én in doorontwikkeling is.
 
-Beschrijf hier de status van de standaard
+Kernpunten van de status:
+Internationaal breed geaccepteerd: Peppol wordt gebruikt in steeds meer landen binnen Europa en daarbuiten, zowel door overheden als steeds meer private partijen.
+Sterk verankerd in publieke sector: in veel landen is Peppol (of Peppol-gebaseerde e-facturatie) de standaard voor communicatie met overheden.
+Groeiende adoptie in zorg en private sector: naast overheid wordt de standaard steeds vaker gebruikt in sectoren zoals zorg, logistiek en grote supply chains.
+Beheerd door OpenPeppol: de standaard wordt continu doorontwikkeld door de internationale community 
+Actieve evolutie: de standaard is niet “af”, maar groeit mee met nieuwe Europese regelgeving (zoals e-invoicing en ViDA) en nieuwe use cases.
+De facto interoperabiliteitsstandaard: in veel domeinen is Peppol inmiddels de praktische standaard geworden voor grensoverschrijdende digitale documentuitwisseling.
 
-<aside class="example">
-De actuele versie van de ADR-standaard is 1.0. Deze versie is op
-09-07-2020 door het OBDO vastgesteld op advies van het Forum
-Standaardisatie.
-</aside>
-
-## BOMOS
-
-> ![](./media/image3.png)Logius richt de beheerorganisatie in conform
+./media/image3.png)Logius richt de beheerorganisatie in conform
 > het Beheer en Ontwikkel Model voor Open Standaarden (BOMOS). Ook het
 > beheer van de xxxxx is op basis van BOMOS ingericht. Voor de
 > beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar
