@@ -2,13 +2,25 @@
 
 ## Leeswijzer
 
-> Dit document beschrijft hoe Logius, afdeling Standaarden (hierna:
-> Logius) xxxxx standaard beheert en hoe de bijbehorende governance is
-> ingericht.
+> Dit document beschrijft hoe Logius, afdeling Stelselregie, het beheer van het Peppol-stelsel en de Peppol-standaard beheert en hoe de bijbehorende governance is ingericht. 
+> 
+## _Peppol
 
-## _Vul naam van de standaard hier in_
+De Peppol-standaard is een internationale set van afspraken en technische specificaties waarmee organisaties elektronisch documenten kunnen uitwisselen, zoals facturen, orders,time-cards en ordersbevestigingen.
+In de kern zorgt Peppol ervoor dat verschillende systemen wereldwijd met elkaar kunnen communiceren via één gestandaardiseerd netwerk. 
+De standaard bestaat uit drie belangrijke onderdelen:
 
-Beschrijf hier de standaard
+Technische specificaties (zoals UBL/XML): hierin staat hoe documenten worden opgebouwd, zodat systemen ze kunnen lezen en verwerken.
+Transportinfrastructuur ( het Peppol-netwerk), 4 corner model: een veilig netwerk dat zorgt voor de verzending van berichten tussen partijen via Access Points.
+
+Afspraken en governance (OpenPeppol): regels en standaarden die ervoor zorgen dat alle deelnemers op dezelfde manier werken en interoperabel blijven.
+Het gebruik van Peppol zorgt voor:
+één aansluiting met wereldwijde bereikbaarheid (Connect Once, Reach All)
+veilige en betrouwbare uitwisseling van documenten
+minder handmatige verwerking
+snellere en foutloze administratieve processen
+internationale interoperabiliteit
+Kort gezegd: Peppol is een gestandaardiseerd digitaal “afsprakenstelsel” dat het mogelijk maakt om wereldwijd op dezelfde manier elektronische zakelijke documenten uit te wisselen. 
 
 <aside class="example">
 De xxx standaard omvat een set van normatieve ontwerpafspraken voor
