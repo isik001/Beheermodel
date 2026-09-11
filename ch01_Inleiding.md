@@ -2,30 +2,40 @@
 
 ## Leeswijzer
 
-> Dit document beschrijft hoe Logius, afdeling Standaarden (hierna:
-> Logius) xxxxx standaard beheert en hoe de bijbehorende governance is
-> ingericht.
+Dit document beschrijft hoe Logius, afdeling Stelselregie, het beheer van het Peppol-stelsel en de Peppol-standaard beheert en hoe de bijbehorende governance is ingericht.
 
-## _Vul naam van de standaard hier in_
+De Peppol-standaard is een internationale set van afspraken en technische specificaties waarmee organisaties elektronisch documenten kunnen uitwisselen, zoals facturen, orders,time-cards en ordersbevestigingen.
+In de kern zorgt Peppol ervoor dat verschillende systemen wereldwijd met elkaar kunnen communiceren via één gestandaardiseerd netwerk. 
 
-Beschrijf hier de standaard
+De standaard bestaat uit drie belangrijke onderdelen:
 
-<aside class="example">
-De xxx standaard omvat een set van normatieve ontwerpafspraken voor
-het structureren en documenteren. De standaard heeft tot doel om
-betere, uniforme en ontwikkelaar vriendelijke API’s te ontwikkelen die
-makkelijk te implementeren zijn. De set van afspraken bestaat uit
-breed toepasbare en ondubbelzinnige richtlijnen. Deze helpen
-organisaties die nieuwe API’s ontwikkelen voor Nederlandse overheden
-(Rijk, provincies, gemeenten en waterschappen) en instellingen uit de
-(semi-) publieke sector. Het Nut en de werking van de standaard zijn
-reeds goed beschreven door het Forum Standaardisatie en voor de
-eenduidigheid hieronder integraal
-opgenomen [<span class="underline">zie link</span>](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules):
-van de standaard zijn reeds goed beschreven door het Forum
-Standaardisatie en voor de eenduidigheid hieronder integraal opgenomen
-[<span class="underline">zie link</span>](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules):
-</aside>
+.  Technische specificaties (zoals UBL/XML): hierin staat hoe documenten worden opgebouwd, zodat systemen ze kunnen lezen en verwerken.
+.  Transportinfrastructuur (het Peppol-netwerk): een veilig netwerk dat zorgt voor de verzending van berichten tussen partijen via Access Points.
+.  Afspraken en governance (OpenPeppol): regels en standaarden die ervoor zorgen dat alle deelnemers op dezelfde manier werken en interoperabel blijven.
+.
+Het gebruik van Peppol zorgt voor:
+
+.  één aansluiting met wereldwijde bereikbaarheid (Connect Once, Reach All)
+.  veilige en betrouwbare uitwisseling van documenten
+.  minder handmatige verwerking
+.  snellere en foutloze administratieve processen
+.  internationale interoperabiliteit
+
+Kort gezegd: Peppol is een gestandaardiseerd digitaal “afsprakenstelsel” dat het mogelijk maakt om wereldwijd op dezelfde manier elektronische zakelijke documenten uit te wisselen. 
+
+VOORBEELD 1
+Stel, een IT-leverancier levert diensten aan zowel een gemeente als een ziekenhuis in Nederland.
+
+Zonder Peppol zou de leverancier vaak per organisatie andere manieren moeten gebruiken om facturen aan te leveren (e-mail, portalen, pdf’s of verschillende e-factuurkoppelingen).
+
+Met Peppol werkt het zo:
+
+.  De leverancier sluit één keer aan op het Peppol-netwerk via een Access Point.
+.  Vanuit het eigen boekhoudsysteem wordt een standaard Peppol-factuur verstuurd.
+.  De factuur gaat via het Peppol-netwerk naar de juiste overheidsorganisatie of zorginstelling.
+.   De gemeente en het ziekenhuis ontvangen de factuur automatisch in hun eigen financiële systeem, volledig verwerkt volgens dezelfde standaard.
+
+Resultaat: één aansluiting waarmee je alle aangesloten Nederlandse overheidsorganisaties en steeds meer zorginstellingen kunt bereiken  dat is Connect Once, Reach All in de Nederlandse praktijk.
 
 ### Nut
 
